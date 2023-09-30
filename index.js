@@ -15,7 +15,7 @@ const coll = db.collection(DB_COLLECTION_NAME);
 async function connectDB() {
   await client
     .connect()
-    .then(() => console.log("Connected Successfully"))
+    .then(() => console.log("Connected to DB Successfully"))
     .catch((error) => console.log("Failed to connect", error));
 }
 connectDB();
